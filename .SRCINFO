@@ -1,0 +1,43 @@
+pkgbase = google-chrome-dev
+	pkgdesc = An attempt at creating a safer, faster, and more stable browser (Dev Channel)
+	pkgver = 41.0.2251.0
+	pkgrel = 1
+	url = https://www.google.com/chrome/index.html
+	install = google-chrome-dev.install
+	arch = i686
+	arch = x86_64
+	license = custom:chrome
+	depends = alsa-lib
+	depends = desktop-file-utils
+	depends = flac
+	depends = gconf
+	depends = gtk2
+	depends = harfbuzz
+	depends = harfbuzz-icu
+	depends = hicolor-icon-theme
+	depends = icu
+	depends = libpng
+	depends = libxss
+	depends = libxtst
+	depends = nss
+	depends = opus
+	depends = snappy
+	depends = speech-dispatcher
+	depends = ttf-font
+	depends = xdg-utils
+	optdepends = kdebase-kdialog: needed for file dialogs in KDE
+	optdepends = ttf-liberation: fix fonts for some PDFs
+	provides = google-chrome=41.0.2251.0
+	noextract = google-chrome-unstable_41.0.2251.0_i386.deb
+	noextract = google-chrome-unstable_41.0.2251.0_amd64.deb
+	options = !emptydirs
+	options = !strip
+	source = google-chrome-unstable_41.0.2251.0_i386.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_41.0.2251.0-1_i386.deb
+	source = google-chrome-unstable_41.0.2251.0_amd64.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_41.0.2251.0-1_amd64.deb
+	source = eula_text.html
+	sha256sums = 9606b10551c6850d0c3b6a577fb73e200f5c8ddc17186d7f696424e5dea7f0df
+	sha256sums = a03adfbc71b4bec1c615ee05759c203a83f8b269606be41e472b936e58699899
+	sha256sums = af48d6467196286e5450f52fd4fd819f9f5c631b322eeac3e23944403d06fcff
+
+pkgname = google-chrome-dev
+
