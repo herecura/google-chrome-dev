@@ -1,7 +1,7 @@
 pkgbase = google-chrome-dev
 	pkgdesc = An attempt at creating a safer, faster, and more stable browser (Dev Channel)
 	pkgver = 45.0.2438.3
-	pkgrel = 1
+	pkgrel = 2
 	url = https://www.google.com/chrome/index.html
 	install = google-chrome-dev.install
 	arch = i686

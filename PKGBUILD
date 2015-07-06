@@ -6,7 +6,7 @@
 
 pkgname=google-chrome-dev
 pkgver=45.0.2438.3
-pkgrel=1
+pkgrel=2
 pkgdesc="An attempt at creating a safer, faster, and more stable browser (Dev Channel)"
 arch=('i686' 'x86_64')
 url="https://www.google.com/chrome/index.html"
