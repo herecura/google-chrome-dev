@@ -1,6 +1,6 @@
 pkgbase = google-chrome-dev
 	pkgdesc = An attempt at creating a safer, faster, and more stable browser (Dev Channel)
-	pkgver = 46.0.2478.0
+	pkgver = 46.0.2486.0
 	pkgrel = 1
 	url = https://www.google.com/chrome/index.html
 	install = google-chrome-dev.install
@@ -27,16 +27,16 @@ pkgbase = google-chrome-dev
 	depends = xdg-utils
 	optdepends = kdebase-kdialog: needed for file dialogs in KDE
 	optdepends = ttf-liberation: fix fonts for some PDFs
-	provides = google-chrome=46.0.2478.0
-	noextract = google-chrome-unstable_46.0.2478.0_i386.deb
-	noextract = google-chrome-unstable_46.0.2478.0_amd64.deb
+	provides = google-chrome=46.0.2486.0
+	noextract = google-chrome-unstable_46.0.2486.0_i386.deb
+	noextract = google-chrome-unstable_46.0.2486.0_amd64.deb
 	options = !emptydirs
 	options = !strip
-	source = google-chrome-unstable_46.0.2478.0_i386.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_46.0.2478.0-1_i386.deb
-	source = google-chrome-unstable_46.0.2478.0_amd64.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_46.0.2478.0-1_amd64.deb
+	source = google-chrome-unstable_46.0.2486.0_i386.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_46.0.2486.0-1_i386.deb
+	source = google-chrome-unstable_46.0.2486.0_amd64.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-unstable/google-chrome-unstable_46.0.2486.0-1_amd64.deb
 	source = eula_text.html
-	sha256sums = 64eab818ee23cad623811a03004661979ca85abc3795bb5d535620aa99fa2060
-	sha256sums = cff21b435e59ac4e4e00d7ed19fd5587c63d7f050e8403c4f281f7762ce2a7ec
+	sha256sums = 49251adca0e7412caea3d07248a9a63a149799603dc99a9adc867b50f6d7aeeb
+	sha256sums = 1e527b2a97bf858d3ee37c4704cb6bd4af429f6f4a0d86ade1c920f22f95c208
 	sha256sums = af48d6467196286e5450f52fd4fd819f9f5c631b322eeac3e23944403d06fcff
 
 pkgname = google-chrome-dev
