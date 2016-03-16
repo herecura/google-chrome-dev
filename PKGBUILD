@@ -5,10 +5,10 @@
 # or use: $ curl -s https://dl.google.com/linux/chrome/rpm/stable/x86_64/repodata/other.xml.gz | gzip -df | awk -F\" '/pkgid/{ sub(".*-","",$4); print $4": "$10 }'
 
 pkgname=google-chrome-dev
-pkgver=49.0.2623.23
+pkgver=51.0.2679.0
 pkgrel=1
 pkgdesc="An attempt at creating a safer, faster, and more stable browser (Dev Channel)"
-arch=('i686' 'x86_64')
+arch=('x86_64')
 url="https://www.google.com/chrome/index.html"
 license=('custom:chrome')
 depends=('alsa-lib' 'desktop-file-utils' 'flac' 'gconf' 'gtk2' 'harfbuzz' 'harfbuzz-icu' 'hicolor-icon-theme'
@@ -20,14 +20,13 @@ options=('!emptydirs' '!strip')
 install=$pkgname.install
 _channel=unstable
 _arch=amd64
-[[ $CARCH = i686 ]] && _arch=i386
 source=(
-	"google-chrome-${_channel}_${pkgver}_i386.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-${_channel}/google-chrome-${_channel}_${pkgver}-1_i386.deb"
 	"google-chrome-${_channel}_${pkgver}_amd64.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-${_channel}/google-chrome-${_channel}_${pkgver}-1_amd64.deb"
 	'eula_text.html'
 )
+sha256sums=('c82c7965643f35871d2bd7490751939df8351013d7a28d49cca8168aa97b202d'
+            'af48d6467196286e5450f52fd4fd819f9f5c631b322eeac3e23944403d06fcff')
 noextract=(
-	"google-chrome-${_channel}_${pkgver}_i386.deb"
 	"google-chrome-${_channel}_${pkgver}_amd64.deb"
 )
 
@@ -63,6 +62,3 @@ package() {
   rm "$pkgdir"/opt/google/chrome-$_channel/product_logo_*.png
 }
 
-sha256sums=('ae9a94b92c0d52f33a5e6341b8d14f532ce28e2dcdadc8b50306d458a29f7cef'
-            '0f915bbfa28574275574732ae7d4b363f07e441134707d54b1f3e03045976f7d'
-            'af48d6467196286e5450f52fd4fd819f9f5c631b322eeac3e23944403d06fcff')
