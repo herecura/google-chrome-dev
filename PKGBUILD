@@ -6,7 +6,7 @@
 
 pkgname=google-chrome-dev
 pkgver=53.0.2785.8
-pkgrel=1
+pkgrel=2
 pkgdesc="An attempt at creating a safer, faster, and more stable browser (Dev Channel)"
 arch=('x86_64')
 url="https://www.google.com/chrome/index.html"
@@ -57,6 +57,9 @@ package() {
   sed -i "/Exec=/i\StartupWMClass=$_name" "$pkgdir"/usr/share/applications/google-chrome-$_channel.desktop
 
   sed -i 's/ "$@"/"$CHROMIUM_USER_FLAGS" "$@"/' "$pkgdir"/opt/google/chrome-$_channel/google-chrome-$_channel
+
+  ln -sf "/opt/google/chrome-$_channel/google-chrome-$_channel" \
+      "$pkgdir/usr/bin/google-chrome-$_channel"
 
   rm -r "$pkgdir"/etc/cron.daily/ "$pkgdir"/opt/google/chrome-$_channel/cron/
   rm "$pkgdir"/opt/google/chrome-$_channel/product_logo_*.png
