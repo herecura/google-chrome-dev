@@ -5,7 +5,7 @@
 # or use: $ curl -s https://dl.google.com/linux/chrome/rpm/stable/x86_64/repodata/other.xml.gz | gzip -df | awk -F\" '/pkgid/{ sub(".*-","",$4); print $4": "$10 }'
 
 pkgname=google-chrome-dev
-pkgver=62.0.3202.9
+pkgver=62.0.3202.18
 pkgrel=1
 pkgdesc="An attempt at creating a safer, faster, and more stable browser (Dev Channel)"
 arch=('x86_64')
@@ -26,7 +26,7 @@ source=(
 	"google-chrome-${_channel}_${pkgver}_amd64.deb::http://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-${_channel}/google-chrome-${_channel}_${pkgver}-1_amd64.deb"
 	'eula_text.html'
 )
-sha256sums=('7fed24ecd4a55fff19d22b4ddae88677f96d0324d9c87fc6d054d4006e6bdb84'
+sha256sums=('0dde3070c62676ea2e4e43f40f5fbe668c6e4c1ac966b145037d863c4a1ec8e2'
             'af48d6467196286e5450f52fd4fd819f9f5c631b322eeac3e23944403d06fcff')
 noextract=(
 	"google-chrome-${_channel}_${pkgver}_amd64.deb"
